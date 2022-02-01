@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="Revised.png">
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Who is your next Philippine President?</h1>
+            <h4 id="description">Thank you for your time to take this survey!</h4>
+        </header>
+        <form action="" id="survey-form">
+            <div>
+                <p class="name">Name:</p>
+                <input type="text" id="name" placeholder="Enter your name" required/>
+            </div>
+            <div>
+                <p class="name">Age:</p>
+                <input type="text" id="age" placeholder="Enter your age"/>
+            </div>
+            <div>
+                <p class="name">Location:</p>
+                <input type="number" id="location" placeholder="Enter your location" min="2" max="2"/>
+            </div><br/>
+            <div>
+                <label class="name" for="voter">Are you a registered voter?</label><br/>
+                <select id="dropdown">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div>
+                <p class="name">Who is your presidential bet?</p>
+                <p><input type="radio" name="user-recommended" value="Panfilo" class="input-radio">Panfilo Lacson</p>
+                <p><input type="radio" name="user-recommended" value="Bongbong" class="input-radio" checked>Bongbong Marcos</p>
+                <p><input type="radio" name="user-recommended" value="Isko" class="input-radio">Isko Moreno</p>
+                <p><input type="radio" name="user-recommended" value="Manny" class="input-radio">Manny Pacquiao</p>
+                <p><input type="radio" name="user-recommended" value="Leni" class="input-radio">Leni Robredo</p>
+            </div>
+            <div>
+                <label for="options" class="name">On what basis do you assess a political candidate?</label><br/>
+                <label class="checkbox"><input name="Yes" value="option1" type="checkbox">News on TV</label><br/>
+                <label class="checkbox"><input name="No" value="option2" type="checkbox">Articles in the newspaper</label><br/>
+                <label class="checkbox"><input name="Yes" value="option3" type="checkbox">Events where the candidate addressing the people</label><br/>
+                <label class="checkbox"><input name="Yes" value="option4" type="checkbox">Research before making choice</label><br/>
+                <label class="checkbox"><input name="Yes" value="option5" type="checkbox">The family upbringing of the candidate</label><br/>
+                <label class="checkbox"><input name="Yes" value="option6" type="checkbox">Others</label><br/>
+            </div>
+            <div>
+                <p class="name">Why do you think your chosen candidate best fit with the position?</p>
+                <textarea name="comments" id="comment-box" placeholder="Comments..."></textarea>
+            </div>
+            <div>
+                <button id="btn" type="button" value="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
